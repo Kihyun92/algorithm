@@ -130,7 +130,7 @@ console.log(isCircular('ACTGACG', 'TGACGAC')); // toBe true
 
 // 1.2.10
 // 1.2.11 날짜값이 유효한지 검사하는 SmartDate 클래스를 구현하라.
-// TODO: assert 사용 가능?
+// TODO: assert 사용 가능? -> console.assert()를 활용하면 될듯
 class SmartDate {
   constructor(m, d, y) {
     // 유효성 검사
@@ -206,3 +206,4 @@ acc.addDataValue(10);
 console.log(acc.mean());
 console.log(acc.var());
 console.log(acc.stddev());
+// LOG: JS에선 NAN이 출력됨. 0으로 나누다보니 발생하는 것 같은데... 좀더 보자
